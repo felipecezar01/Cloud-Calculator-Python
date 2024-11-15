@@ -1,34 +1,30 @@
 # ☁️ Cloud Calculator - Python Flask Web App
 
-Este projeto de uma **calculadora web** em Python com Flask foi desenvolvido com o objetivo de praticar o deploy na **AWS EC2** e aprender sobre configurações de ambiente de produção.
+Este projeto é uma **calculadora web** desenvolvida em Python com Flask, focada em treinar o deploy na **AWS EC2** e configurar um servidor Ubuntu em ambiente de produção.
 
 ---
 
-## 🔍 O que Aprendi
+## 📸 Pré-visualizações
 
-### 1. Deploy de Aplicação na Nuvem com AWS EC2
-   - Configuração de uma instância EC2 do zero, usando uma **AMI Ubuntu** e o tipo de instância `t2.micro`.
-   - Criação de **grupos de segurança** para liberar as portas necessárias (SSH e HTTP) para acesso externo.
-   - Configuração de segurança e monitoramento de uso para controle de custos.
+### Interface da Calculadora
+<div align="center">
+  <img src="calculator.png" alt="Interface da Calculadora">
+</div>
 
-### 2. Configuração de Ambiente de Desenvolvimento Remoto
-   - Utilização do SSH para conexão com a instância na AWS.
-   - Criação e ativação de um **ambiente virtual Python** na máquina remota para isolar dependências.
-   - Instalação e configuração do **Flask** no servidor remoto.
-
-### 3. Transferência de Arquivos e Execução Remota
-   - Uso de `scp` para transferir arquivos do projeto local para o servidor AWS.
-   - Execução de uma aplicação Flask em ambiente de produção, entendendo as diferenças entre ambiente local e nuvem.
-
-### 4. Monitoramento de Custos na AWS
-   - Configuração de **alertas de orçamento** e **detecção de anomalias de custo** para evitar gastos inesperados, garantindo que o uso da AWS EC2 permaneça dentro do limite gratuito.
+### Dashboard da AWS
+<div align="center">
+  <img src="awsshow.png" alt="Dashboard de Configuração na AWS">
+</div>
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🔍 O que foi feito
 
-```plaintext
-Cloud-Calculator-Python/
-├── app.py          # Código principal da calculadora em Flask
-├── index.html      # Interface da calculadora
-└── README.md       # Documentação do projeto
+- Configuração de uma instância EC2 na **AWS** (Ubuntu `t2.micro`).
+- Criação de grupos de segurança para liberar **SSH** e **HTTP**.
+- Configuração de um ambiente virtual Python e instalação do **Flask**.
+- Deploy do projeto e monitoramento de custos na AWS.
+
+---
+
+📚 *Projeto desenvolvido para praticar deploy e configuração de servidores na nuvem com AWS e Python Flask.*
